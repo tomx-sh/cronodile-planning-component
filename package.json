@@ -1,6 +1,6 @@
 {
 	"name": "cronodile-planning-component",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"main": "dist/index.js",
 	"module": "dist/index.esm.js",
 	"types": "dist/types/index.d.ts",
@@ -22,5 +22,9 @@
 		"rollup-plugin-peer-deps-external": "^2.2.4",
 		"rollup-plugin-typescript2": "^0.36.0",
 		"typescript": "^5.6.2"
+	},
+	"dependencies": {
+		"@types/d3": "^7.4.3",
+		"d3": "^7.9.0"
 	}
 }
