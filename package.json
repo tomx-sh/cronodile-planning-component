@@ -1,0 +1,26 @@
+{
+	"name": "cronodile-planning-component",
+	"version": "1.0.0",
+	"main": "dist/index.js",
+	"module": "dist/index.esm.js",
+	"types": "dist/types/index.d.ts",
+	"scripts": {
+		"build": "rollup -c",
+		"prepare": "pnpm run build"
+	},
+	"peerDependencies": {
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1"
+	},
+	"devDependencies": {
+		"@rollup/plugin-commonjs": "^26.0.1",
+		"@rollup/plugin-node-resolve": "^15.2.3",
+		"@types/react": "^18.3.8",
+		"@types/react-dom": "^18.3.0",
+		"@types/rollup-plugin-peer-deps-external": "^2.2.5",
+		"rollup": "^4.22.2",
+		"rollup-plugin-peer-deps-external": "^2.2.4",
+		"rollup-plugin-typescript2": "^0.36.0",
+		"typescript": "^5.6.2"
+	}
+}
