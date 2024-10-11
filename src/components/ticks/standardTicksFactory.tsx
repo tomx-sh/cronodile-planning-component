@@ -1,6 +1,6 @@
 import * as d3 from 'd3';
 import RegularTicks from './RegularTicks';
-import { TimeScale } from '../useTimeScale';
+import { TimeScale } from '../../hooks/useTimeScale';
 
 type StandardTicksType = 'years' | 'months' | 'weeks' | 'days';
 

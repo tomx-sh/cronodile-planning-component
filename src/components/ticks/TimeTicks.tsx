@@ -3,7 +3,7 @@ import { useTimeTicksState } from "./useTimeTicksState";
 import { useMemo, useEffect } from "react";
 import makeStandardTicks from "./standardTicksFactory";
 import { overlaps } from "./standardTicksFactory";
-import { useTimeScale } from "../useTimeScale";
+import { useTimeScale } from "../../hooks/useTimeScale";
 
 
 export default function TimeTicks() {

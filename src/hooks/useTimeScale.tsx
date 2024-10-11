@@ -8,6 +8,7 @@ interface TimeScaleState {
     timeScale: TimeScale;
     /** Visible time range */
     domain: [Date, Date];
+    /** Pixel positions */
     range: [number, number];
     /** Min date of the planning */
     minDate: Date;
@@ -102,7 +103,7 @@ export function TimeScaleContextProvider({ children }: { children: React.ReactNo
                 const prevTimeSpan = prevDomain[1].getTime() - prevDomain[0].getTime();
                 const prevRangeSpan = prevRange[1] - prevRange[0];
 
-                const timePerPixel = Math.max(prevTimeSpan/(2*prevRangeSpan), 1);
+                const timePerPixel = Math.max(prevTimeSpan/(prevRangeSpan), 1); // 2*prevTimeSpan maybe?
 
                 const startTimeShift = Math.floor((deltaXStart * timePerPixel));
                 const endTimeShift   = Math.floor((deltaXEnd   * timePerPixel));

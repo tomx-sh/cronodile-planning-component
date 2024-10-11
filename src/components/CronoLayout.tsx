@@ -1,7 +1,7 @@
 import React from "react";
 import { createContext } from "react";
 import { useCanvas } from "./Canvas";
-import { useTimeScale } from "./useTimeScale";
+import { useTimeScale } from "../hooks/useTimeScale";
 import { useEffect, useMemo } from "react";
 import { useScrollableCanvas } from "./ScrollableCanvas";
 

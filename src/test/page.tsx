@@ -2,9 +2,10 @@ import Resizable from "../components/Resizable";
 import CronoLayout from "../components/CronoLayout";
 import TimeTicks from "../components/ticks/TimeTicks";
 import { useTimeTicksState } from "../components/ticks/useTimeTicksState";
-import { useTimeScale } from "../components/useTimeScale";
+import { useTimeScale } from "../hooks/useTimeScale";
 import ScrollableCanvas from "../components/ScrollableCanvas";
 import { useState } from "react";
+import Timelines from "../components/timelines/Timelines";
 
 
 export default function Home() {
@@ -28,6 +29,7 @@ export default function Home() {
                     <ScrollableCanvas style={{height: '100%', width: '100%'}}>
                         <CronoLayout>
                             <TimeTicks />
+                            <Timelines />
                         </CronoLayout>
                     </ScrollableCanvas>
                 </Resizable>

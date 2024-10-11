@@ -1,14 +1,17 @@
 import "./globals.css";
 import { TimeTicksContextProvider } from "../components/ticks/useTimeTicksState";
-import { TimeScaleContextProvider } from "../components/useTimeScale";
+import { TimeScaleContextProvider } from "../hooks/useTimeScale";
+import { VerticalScaleContextProvider } from "../hooks/useVerticalScale";
 
 
 export default function RootLayout({children}: Readonly<{children: React.ReactNode;}>) {
     return (
         <TimeScaleContextProvider>
-            <TimeTicksContextProvider>
-                {children}
-            </TimeTicksContextProvider>
+            <VerticalScaleContextProvider>
+                <TimeTicksContextProvider>
+                    {children}
+                </TimeTicksContextProvider>
+            </VerticalScaleContextProvider>
         </TimeScaleContextProvider>
     );
 }
