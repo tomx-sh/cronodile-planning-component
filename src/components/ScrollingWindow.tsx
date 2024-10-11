@@ -13,7 +13,7 @@ export default function ScrollingWindow({virtualWidth, virtualHeight, ...divProp
 
     return (
         <div {...divProps} style={styles}>
-            <div style={{ width: virtualWidth, height: virtualHeight}}>
+            <div style={{ width: virtualWidth || 1, height: virtualHeight || 1}}>
             </div>
         </div>
     )
