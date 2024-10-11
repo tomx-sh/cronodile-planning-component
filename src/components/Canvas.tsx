@@ -1,4 +1,3 @@
-'use client'
 import { useRef, createContext, useContext } from "react";
 import useResponsive from "../hooks/useResponsive";
 //import ScrollingWindow from "./ScrollingWindow";

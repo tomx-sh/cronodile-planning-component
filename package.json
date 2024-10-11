@@ -1,12 +1,12 @@
 {
 	"name": "cronodile-planning-component",
 	"version": "1.0.2",
-	"main": "dist/index.js",
-	"module": "dist/index.esm.js",
-	"types": "dist/types/index.d.ts",
+	"main": "dist/package/index.js",
+	"module": "dist/package/index.esm.js",
+	"types": "dist/package/types/index.d.ts",
 	"scripts": {
-		"build": "rollup -c",
-		"prepare": "pnpm run build"
+		"build:package": "rollup -c",
+		"dev": "vite"
 	},
 	"peerDependencies": {
 		"react": "^18.3.1",
@@ -17,14 +17,19 @@
 		"@rollup/plugin-node-resolve": "^15.2.3",
 		"@types/react": "^18.3.8",
 		"@types/react-dom": "^18.3.0",
+		"@types/react-resizable": "^3.0.8",
 		"@types/rollup-plugin-peer-deps-external": "^2.2.5",
 		"rollup": "^4.22.2",
 		"rollup-plugin-peer-deps-external": "^2.2.4",
 		"rollup-plugin-typescript2": "^0.36.0",
-		"typescript": "^5.6.2"
+		"tslib": "^2.7.0",
+		"typescript": "^5.6.2",
+		"vite": "^5.4.8"
 	},
 	"dependencies": {
 		"@types/d3": "^7.4.3",
-		"d3": "^7.9.0"
+		"@vitejs/plugin-react": "^4.3.2",
+		"d3": "^7.9.0",
+		"react-resizable": "^3.0.5"
 	}
 }

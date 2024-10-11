@@ -5,14 +5,10 @@ import { TimeScaleContextProvider } from "../components/useTimeScale";
 
 export default function RootLayout({children}: Readonly<{children: React.ReactNode;}>) {
     return (
-        <html lang="en">
-            <body>
-                <TimeScaleContextProvider>
-                    <TimeTicksContextProvider>
-                        {children}
-                    </TimeTicksContextProvider>
-                </TimeScaleContextProvider>
-            </body>
-        </html>
+        <TimeScaleContextProvider>
+            <TimeTicksContextProvider>
+                {children}
+            </TimeTicksContextProvider>
+        </TimeScaleContextProvider>
     );
 }

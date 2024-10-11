@@ -1,4 +1,3 @@
-'use client'
 import Canvas from "./Canvas"
 import { CanvasProps } from "./Canvas"
 import ScrollingWindow from "./ScrollingWindow"

@@ -1,4 +1,3 @@
-'use client'
 import { useCronoLayout } from "../CronoLayout"
 import { useCanvas } from "../Canvas"
 

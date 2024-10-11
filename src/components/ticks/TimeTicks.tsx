@@ -1,4 +1,3 @@
-'use client'
 import { useCronoLayout } from "../CronoLayout"
 import { useTimeTicksState } from "./useTimeTicksState";
 import { useMemo, useEffect } from "react";

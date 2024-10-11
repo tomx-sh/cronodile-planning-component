@@ -2,7 +2,7 @@
     "compilerOptions": {
         "target": "es2016",
         "declaration": true,
-        "declarationDir": "./dist/types",
+        "declarationDir": "./dist/package/types",
         "lib": ["dom", "dom.iterable", "esnext"],
         "jsx": "react-jsx",
         "module": "ESNext",
@@ -10,7 +10,8 @@
         "moduleResolution": "node",
         "forceConsistentCasingInFileNames": true,
         "strict": true,
-        "skipLibCheck": true
+        "skipLibCheck": true,
+        "importHelpers": true,
     },
     "include": ["src/**/*"],
     "exclude": ["node_modules", "dist"]

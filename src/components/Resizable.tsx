@@ -1,4 +1,3 @@
-'use client'
 import { ResizableBox } from 'react-resizable';
 import './resizable.css';
 

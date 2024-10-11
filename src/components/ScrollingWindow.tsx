@@ -1,5 +1,3 @@
-'use client'
-
 interface ScrollingWindowProps extends React.HTMLAttributes<HTMLDivElement> {
     virtualWidth: number;
     virtualHeight: number;

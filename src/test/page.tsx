@@ -1,4 +1,3 @@
-'use client'
 import Resizable from "../components/Resizable";
 import CronoLayout from "../components/CronoLayout";
 import TimeTicks from "../components/ticks/TimeTicks";

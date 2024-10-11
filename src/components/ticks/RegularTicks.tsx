@@ -1,4 +1,3 @@
-'use client'
 import Tick from "./Tick"
 
 export interface RegularTicksProps {
